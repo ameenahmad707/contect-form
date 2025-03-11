@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+        .contact-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        .success-message {
+            color: green;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form class="contact-form" id="contactForm" action="save_contact.php" method="POST">
+        <!-- use send_mail.php instead of save_contact.php if you want to get the data derived from the form in your email -->
+        <h2>Contact Us</h2>
+        <input type="text" name="name" id="name" placeholder="Your Name">
+        <span class="error" id="nameError"></span>
+        
+        <input type="email" name="email" id="email" placeholder="Your Email">
+        <span class="error" id="emailError"></span>
+        
+        <input type="text" name="subject" id="subject" placeholder="Subject">
+        <span class="error" id="subjectError"></span>
+        
+        <textarea name="message" id="message" placeholder="Your Message" rows="4"></textarea>
+        <span class="error" id="messageError"></span>
+        
+        <button type="submit">Send Message</button>
+        <p class="success-message" id="successMessage"></p>
+    </form>
+</body>
+</html>
