@@ -12,7 +12,7 @@ This is a **fully functional contact form** built with **HTML, CSS, and PHP**. I
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-username/contact-form.git
+git clone https://github.com/ameenahmad707/contact-form.git
 cd contact-form
 ```
 
