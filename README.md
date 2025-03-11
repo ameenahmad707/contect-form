@@ -12,7 +12,8 @@ This is a **fully functional contact form** built with **HTML, CSS, and PHP**. I
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/ameenahmad707/contect-form/tree/main/Contect%20Form
+git clone https://github.com/your-username/contact-form.git
+cd contact-form
 ```
 
 ### 2. Create the Database
